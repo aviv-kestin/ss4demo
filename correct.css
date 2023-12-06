@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#000000;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+ .melon {
+
+ }
+
+ .trust {
+    display: flex;
+    background-color:#000000;
+    height: 100vh;
+
+    }
+    
+    
+.realdeal {
+
+}
+
+
+.play {
+
+background-color:darkseagreen;
+position: absolute;
+font-size: 120%;
+top: 20px;
+left: 20px;
+padding: 10px;
+border-radius: 40%;
+cursor: pointer;
+}
+
+.pause {
+   background-color:darkseagreen;
+   position: absolute;
+   font-size: 120%;
+   position: absolute;
+   top: 20px;
+   left: 65px;
+   padding: 10px;
+border-radius: 40%;
+cursor: pointer;
+}
+
+.planet1 {
+   position: absolute;
+   width: 36vw;
+   height: auto;
+   right: 70px;
+   top: 80px;
+   opacity: 83%;
+   image-rendering: pixelated;
+
+}
+
+.man {
+   position: absolute;
+   width: 8vw;
+   height: auto;
+   top: 40vh;
+   left: 70vw;
+   -webkit-animation:spin 4s linear infinite;
+   -moz-animation:spin 4s linear infinite;
+   animation:spin 4s linear infinite;
+   image-rendering: pixelated;
+}
+
+@-moz-keyframes spin { 
+   100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+   100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+   100% { 
+       -webkit-transform: rotate(360deg); 
+       transform:rotate(360deg); 
+   } 
+}
+
+.man.off {
+	animation-name: none;	
+}
+
+.stars {
+   opacity: 90%;
+
+}
+
+@keyframes pulse {
+   0% {
+    transform: scale(1, 1) ;
+   }
+
+   50% {
+    transform: scale(1.2, 1.2) ;
+   }
+
+   100% {
+   transform: scale(1, 1) ;
+   }
+}
+
+.pulse{
+   animation: pulse 1.785s ease-in-out infinite;
+}
+
+.star1 {
+   width: 12vw;
+   height: auto;
+   bottom: 20px;
+   left: 280px;
+   position: absolute;
+   image-rendering: pixelated;
+}
+
+.star2 {
+   width: 10.5vw;
+   height: auto;
+   top: 530px;
+   left: 400px;
+   position: absolute;
+   image-rendering: pixelated;
+   
+}
+
+.star3 {
+   width: 8vw;
+   height: auto;
+   top: 90px;
+   left: 640px;
+   position: absolute;
+   image-rendering: pixelated;
+   
+   
+}
+
+.star4 {
+   width: 10vw;
+   height: auto;
+   top: 670px;
+   right: 170px;
+   position: absolute;
+   image-rendering: pixelated;
+}
+
+.star5 {
+   width: 8vw;
+   height: auto;
+   top: 1000px;
+   right: 540px;
+   position: absolute;
+   image-rendering: pixelated;
+   
+}
+
+.star6 {
+   width: 8.3vw;
+   height: auto;
+   top: 1230px;
+   right: 170px;
+   position: absolute;
+   image-rendering: pixelated;
+   
+}
+
+.star7 {
+   width: 10vw;
+   height: auto;
+   top: 330px;
+   left: 570px;
+   position: absolute;
+   image-rendering: pixelated;
+   
+}
+
+.star8 {
+   width: 8.3vw;
+   height: auto;
+   top: 130px;
+   left: 90px;
+   position: absolute;
+   image-rendering: pixelated;
+}
+
+.star9 {
+   width: 8vw;
+   height: auto;
+   top: 30px;
+   right: 120px;
+   position: absolute;
+   image-rendering: pixelated;
+}
+
+.star10 {
+   width: 6.7vw;
+   height: auto;
+   top: 960px;
+   right: 260px;
+   position: absolute;
+   image-rendering: pixelated;
+   
+}
+
+.star11 {
+   width: 9vw;
+   height: auto;
+   top: 1260px;
+   left: 480px;
+   position: absolute;
+   image-rendering: pixelated;
+   
+}
+
+.planet2 {
+   position: absolute;
+   width: 35vw;
+   height: auto;
+   top: 55vh;
+   image-rendering: pixelated;
+   opacity: 90%;
+
+}
+
+
+.ship {
+   position: absolute;
+   width: 20vw;
+   height: auto;
+   top: 20vh;
+   left: 18vw;
+   display: none;
+   opacity: 80%;
+   animation: MoveUpDown 1.78s linear infinite;
+}
+
+@keyframes MoveUpDown {
+   0%, 100% {
+     transform: translateY(0);
+   }
+   
+   
+   50% {
+     transform: translateY(-40px);
+   }
+ }

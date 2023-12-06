@@ -1,0 +1,45 @@
+$("document").ready(function() {
+
+
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'heoliene - pico - 01 nanospore.mp3');
+    audioElement.setAttribute('autoplay', 'autoplay');
+    //audioElement.load()
+    $.get();
+    audioElement.addEventListener("load", function() {
+    audioElement.play();
+    }, true);
+
+
+
+
+    $( ".play" ).click(function() {
+      audioElement.play();
+      $( ".ship" ).show("slow");
+      $( ".man" ).removeClass( "off" );
+      $( ".stars").children().addClass("pulse");
+     
+    });
+
+
+
+    $( ".pause" ).click(function() {
+      audioElement.pause();
+        $( ".man" ).addClass( "off" )
+        $( ".ship" ).hide();
+        $( ".stars").children().removeClass("pulse");
+      });
+
+
+    
+
+
+     
+
+
+
+
+
+
+
+});
